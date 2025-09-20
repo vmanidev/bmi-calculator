@@ -1,11 +1,13 @@
+import styles from "./Dashboard.module.css";
+
 export default function Dashboard() {
   return (
-    <div>
-      <div className="app-title">BMI Calculator</div>
+    <div className={styles.dashboardContainer}>
+      <div className={`${styles.fullGridCol} app-title`}>BMI Calculator</div>
       <div className="gender"></div>
-      <div className="height-slider"></div>
-      <div className="age-and-weight"></div>
-      <button>Calculate Your BMI</button>
+      <div className="heightSlider"></div>
+      <div className="ageAndWeight"></div>
+      <button className={styles.fullGridCol}>Calculate Your BMI</button>
     </div>
   );
 }

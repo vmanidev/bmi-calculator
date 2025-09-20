@@ -12,10 +12,11 @@ body {
 }
 
 .app-title {
-  font-size: 36px;
+  font-size: 24px;
   width: fit-content;
   margin: auto;
   padding: 16px;
+  font-weight: 700;
 }
 
 .card {
@@ -27,4 +28,6 @@ button {
   color: #fff;
   padding: 16px;
   font-size: 16px;
+  cursor: pointer;
+  user-select: none;
 }
