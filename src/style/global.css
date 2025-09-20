@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #0b1033;
+  color: #fff;
+}
+
+.card {
+  background-color: #282c4f;
+}
+
+button {
+  color: #ff0067;
+}
