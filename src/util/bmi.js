@@ -1,6 +1,6 @@
 export function calculateBmi({ height, weight }) {
     const bmi = weight / Math.pow(height / 100, 2);
-    const status = getBmiStatus(bmi);
+    const status = getBmiStatus(Number(bmi.toFixed(1)));
     return { bmi: bmi.toFixed(1), status };
 }
 
