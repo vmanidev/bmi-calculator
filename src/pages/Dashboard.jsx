@@ -28,8 +28,26 @@ export default function Dashboard() {
         />
       </div>
       <div className={styles.weightAndAge}>
-        <div className="card">Age</div>
-        <div className="card">Weight</div>
+        <div className="card">
+          <div className="card-title-container">
+            <span className="card-title">Weight</span>
+            <span className="card-subtitle">65 KG</span>
+          </div>
+          <div className={styles.incDecBtnContainer}>
+            <span class="material-icons material-symbols-outlined">add</span>
+            <span class="material-icons material-symbols-outlined">remove</span>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-title-container">
+            <span className="card-title">Age</span>
+            <span className="card-subtitle">30</span>
+          </div>
+          <div className={styles.incDecBtnContainer}>
+            <span class="material-icons material-symbols-outlined">add</span>
+            <span class="material-icons material-symbols-outlined">remove</span>
+          </div>
+        </div>
       </div>
       <button className={styles.fullGridCol}>Calculate Your BMI</button>
     </div>
