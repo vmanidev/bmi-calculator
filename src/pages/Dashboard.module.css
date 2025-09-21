@@ -29,8 +29,19 @@
 }
 
 .heightSlider input[type="range"] {
+  -webkit-appearance: none;
   width: 90%;
   margin: auto;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.heightSlider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #ff0067;
+  border-radius: 50%;
 }
 
 .incDecBtnContainer {
