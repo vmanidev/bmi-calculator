@@ -13,7 +13,7 @@ export const advice = {
 
 export const bmiColors = {
     "Underweight": "#5DADE2",            // Light blue – indicates mild caution
-    "Normal weight": "#2ECC71",          // Green – healthy
+    "Normal": "#2ECC71",          // Green – healthy
     "Overweight": "#F1C40F",             // Yellow – moderate caution
     "Obesity Class I (Moderate)": "#E67E22", // Orange – higher caution
     "Obesity Class II (Severe)": "#E74C3C",  // Red – high risk
