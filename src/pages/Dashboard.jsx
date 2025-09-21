@@ -71,7 +71,7 @@ export default function Dashboard() {
       <div className={`${styles.heightSlider} card`}>
         <div className="card-title-container">
           <span className="card-title">Height</span>
-          <span className="card-subtitle">
+          <span className={`card-subtitle ${formData.height && "highlight"}`}>
             {formData.height ? `${formData.height} CM` : `--`}
           </span>
         </div>
@@ -89,7 +89,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-title-container">
             <span className="card-title">Weight</span>
-            <span className="card-subtitle">
+            <span className={`card-subtitle ${formData.weight && "highlight"}`}>
               {formData.weight ? `${formData.weight} KG` : `--`}
             </span>
           </div>
@@ -111,7 +111,7 @@ export default function Dashboard() {
         <div className="card">
           <div className="card-title-container">
             <span className="card-title">Age</span>
-            <span className="card-subtitle">
+            <span className={`card-subtitle ${formData.age && "highlight"}`}>
               {formData.age ? formData.age : `--`}
             </span>
           </div>
