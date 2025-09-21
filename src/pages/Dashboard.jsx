@@ -5,10 +5,14 @@ export default function Dashboard() {
     <div className={styles.dashboardContainer}>
       <div className="app-title">BMI Calculator</div>
       <div className={styles.gender}>
-        <span class="card material-icons material-symbols-outlined">male</span>
-        <span class="card material-icons material-symbols-outlined">
-          female
-        </span>
+        <div className="card">
+          <span class="material-icons material-symbols-outlined">male</span>
+          <span>Male</span>
+        </div>
+        <div className="card">
+          <span class="material-icons material-symbols-outlined">female</span>
+          <span>Female</span>
+        </div>
       </div>
       <div className={`${styles.heightSlider} card`}>
         <div className="card-title-container">

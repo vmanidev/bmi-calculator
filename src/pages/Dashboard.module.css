@@ -2,7 +2,7 @@
 .dashboardContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 100px 131px 130px;
+  grid-template-rows: 50px 130px 130px 130px;
   width: 90%;
   margin: auto;
   gap: 24px;
@@ -15,11 +15,16 @@
   gap: 24px;
 }
 
-.gender > span {
+.gender > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+  align-items: center;
+}
+
+.gender > div span:first-child {
   font-size: 72px;
-  padding: 16px;
-  text-align: center;
-  align-self: center;
 }
 
 .heightSlider {
