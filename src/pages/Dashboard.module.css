@@ -5,7 +5,7 @@
   grid-template-rows: 130px 130px 130px;
   width: 90%;
   margin: auto;
-  gap: 24px;
+  gap: 36px;
   user-select: none;
 }
 
@@ -53,7 +53,7 @@
 .incDecBtnContainer > span {
   padding: 4px;
   background: #0b1033;
-  border-radius: 20px;
+  border-radius: 50%;
   font-size: 36px;
 }
 
