@@ -21,17 +21,26 @@
   gap: 16px;
   padding: 8px;
   align-items: center;
+  user-select: none;
 }
 
 .gender > div span:first-child {
   font-size: 72px;
 }
 
-.heightSlider {
-  display: grid;
-}
-
-.heightSlider > * {
+.heightSlider input[type="range"] {
   width: 90%;
   margin: auto;
+}
+
+.incDecBtnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.incDecBtnContainer > span {
+  padding: 4px;
+  background: #0b1033;
+  border-radius: 20px;
 }
