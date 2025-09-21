@@ -21,6 +21,7 @@ body {
 
 .card {
   background-color: #282c4f;
+  padding: 16px;
 }
 
 button {
