@@ -35,7 +35,6 @@ export default function Dashboard() {
 
   return (
     <div className={styles.dashboardContainer}>
-      <div className="app-title">BMI Calculator</div>
       <div className={styles.gender}>
         <label className="card">
           <input

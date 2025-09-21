@@ -2,7 +2,7 @@
 .dashboardContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 130px 130px 130px;
+  grid-template-rows: 130px 130px 130px;
   width: 90%;
   margin: auto;
   gap: 24px;
