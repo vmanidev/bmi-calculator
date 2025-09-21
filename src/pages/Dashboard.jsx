@@ -41,7 +41,7 @@ export default function Dashboard() {
   return (
     <div className={styles.dashboardContainer}>
       <div className={styles.gender}>
-        <label className="card">
+        <label className={`card ${formData.gender === "male" && "highlight"}`}>
           <input
             type="checkbox"
             name="gender"
@@ -52,7 +52,9 @@ export default function Dashboard() {
           <span className="material-icons material-symbols-outlined">male</span>
           <span>Male</span>
         </label>
-        <label className="card">
+        <label
+          className={`card ${formData.gender === "female" && "highlight"}`}
+        >
           <input
             type="checkbox"
             name="gender"
