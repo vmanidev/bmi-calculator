@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { calculateBmi } from "../util/bmi";
+import { calculateBmi } from "../util/bmi.js";
 
 import styles from "./result.module.css";
 
