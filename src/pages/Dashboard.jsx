@@ -16,7 +16,7 @@ export default function Dashboard() {
     const { name, value } = target;
     setFormData((prev) => ({
       ...prev,
-      [name]: name === "height" ? Number(value) : value,
+      [name]: ["weight", "height"].includes(name) ? Number(value) : value,
     }));
   }
 
