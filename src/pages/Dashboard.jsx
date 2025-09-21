@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Dashboard.module.css";
 import { useNavigate } from "react-router-dom";
 
@@ -11,6 +11,11 @@ export default function Dashboard() {
   });
 
   const navigate = useNavigate();
+
+  useEffect(
+    () => setFormData({ gender: "", height: 0, weight: 0, age: 0 }),
+    []
+  );
 
   function onchangeHandle({ target }) {
     const { name, value } = target;
