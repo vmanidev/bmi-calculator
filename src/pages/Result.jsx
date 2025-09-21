@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { calculateBmi } from "../util/bmi.js";
 
-import styles from "./result.module.css";
+import styles from "./Result.module.css";
 
 export default function Result() {
   const location = useLocation();
