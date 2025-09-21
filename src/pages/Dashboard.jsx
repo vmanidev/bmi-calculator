@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Dashboard.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ export default function Dashboard() {
     weight: 0,
     age: 0,
   });
+
+  const navigate = useNavigate();
 
   function onchangeHandle({ target }) {
     const { name, value } = target;
@@ -18,7 +21,7 @@ export default function Dashboard() {
   }
 
   function formSubmit() {
-    console.log(formData);
+    navigate("/result", { state: formData });
   }
 
   function increment(name) {
