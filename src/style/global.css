@@ -23,6 +23,9 @@ body {
 .card {
   background-color: #282c4f;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .card-title-container {
