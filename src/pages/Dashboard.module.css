@@ -6,6 +6,7 @@
   width: 90%;
   margin: auto;
   gap: 24px;
+  user-select: none;
 }
 
 .gender,
@@ -15,16 +16,15 @@
   gap: 24px;
 }
 
-.gender > div {
+.gender label {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 8px;
   align-items: center;
-  user-select: none;
 }
 
-.gender > div span:first-child {
+.gender > label span:nth-child(2) {
   font-size: 72px;
 }
 
@@ -43,4 +43,10 @@
   padding: 4px;
   background: #0b1033;
   border-radius: 20px;
+  font-size: 36px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
 }
