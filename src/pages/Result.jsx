@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { calculateBmi } from "../util/bmi.js";
+import { info } from "../constants/bmi_info.js";
 
 import styles from "./Result.module.css";
 
@@ -14,10 +15,11 @@ export default function Result() {
 
   return (
     <div className={styles.resultContainer}>
-      <div>Your Results</div>
+      <div>Your Result</div>
       <div className={`${styles.result} card`}>
         <div>{status}</div>
-        <div>{!isNaN(bmi) && bmi}</div>
+        <div className={styles.bmi}>{!isNaN(bmi) && bmi}</div>
+        <div className={styles.info}>{info.normalRange}</div>
       </div>
       <button onClick={reCalculateBmi}>Re-Calculate Your BMI</button>
     </div>

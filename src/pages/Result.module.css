@@ -18,6 +18,13 @@
   padding: 16px;
 }
 
-.result > div:last-child {
+.result .bmi {
   font-size: 72px;
+}
+
+.result .info {
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  color: #9e9e9e;
 }
