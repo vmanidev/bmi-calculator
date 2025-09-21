@@ -26,6 +26,7 @@ export default function Dashboard() {
   }
 
   function formSubmit() {
+    if (formData.height === 0 || formData.weight === 0) return;
     navigate("/result", { state: formData });
   }
 
