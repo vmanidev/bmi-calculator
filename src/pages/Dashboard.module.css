@@ -2,10 +2,10 @@
 .dashboardContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 1fr 50px;
+  grid-template-rows: 50px 100px 131px 130px;
   width: 90%;
   margin: auto;
-  row-gap: 24px;
+  gap: 24px;
 }
 
 .gender,
@@ -13,6 +13,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  align-items: center;
-  justify-items: center;
+}
+
+.gender > span {
+  font-size: 72px;
+  padding: 16px;
+  text-align: center;
+  align-self: center;
+}
+
+.heightSlider {
+  display: grid;
+}
+
+.heightSlider > * {
+  width: 90%;
+  margin: auto;
 }
