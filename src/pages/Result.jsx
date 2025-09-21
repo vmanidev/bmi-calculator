@@ -17,7 +17,7 @@ export default function Result() {
       <div>Your Results</div>
       <div className={`${styles.result} card`}>
         <div>{status}</div>
-        <div>{bmi}</div>
+        <div>{!isNaN(bmi) && bmi}</div>
       </div>
       <button onClick={reCalculateBmi}>Re-Calculate Your BMI</button>
     </div>
